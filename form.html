@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="clothing.css">
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+</head>
+<body>
+  <main>
+    <div class="form-container">
+    <h1 id="title">Apparel Survey Form</h1>
+    <p id="description">Please fill out the details below:</p>
+    <form id="survey-form" method="post">
+    <fieldset>
+      <label for="name" id="name-label">Name <input required class="info" type="text" id="name" placeholder="Enter Your Name"></label>
+<label id="email-label"for="email">Email <input required class="info" type="email" id="email" placeholder="Enter Your Email"></label>
+<label for "number" id="number-label">Age <input required class="info" type="number" id="number" min="13" max="120" placeholder="Age"></label></fieldset>
+      <fieldset>
+        <legend>Whats your favorite dressing style?</legend>
+        <select id="dropdown">
+<option value="1">Casual</option>
+<option value="2">Non-Formal</option>
+          </select></label>
+        </fieldset>
+        <fieldset>
+          <legend>Whats Your Favorite Weather Fashion?</legend>
+          <label for="summer"><input class="inline"  type="radio" id="summer" name="Summer-Winter" checked value="1"> Summer</label>
+          <label for="winter"><input type="radio" id="winter" name="Summer-Winter" value="2" class="inline"> Winter</label>
+          </fieldset>
+          <fieldset>
+<label for="color">What Is Your Favorite Color?<select id="color">
+  <option value="1">Red</option>
+  <option value="2">Blue</option>
+  <option value="3">Black</option>
+  <option value="4">Other</option>
+  </select></label>
+            </fieldset>
+            <fieldset>
+              <legend>Your Favorite Brand Of Clothing:</legend>
+              <label for="prada"><input  id="prada" type="checkbox" value="1" class="inline"> Prada</label>
+              <label for="Dior"><input class="inline" id="dior" type="checkbox" value="2"> Dior</label>
+              <label for="gucci"><input class="inline" id="gucci" type="checkbox" value="3"> Gucci</label>
+              <label for="other"><input class="inline" id="other" type="checkbox" value="4"> Other</label>
+              </fieldset>
+              <fieldset class="space">
+                <legend>Comments And Suggestions</legend>
+                <textarea placeholder="comments..."></textarea>
+                </fieldset>
+                <input id="submit" type="submit">
+      </form>
+      </div>
+    </main>
+  </body>
+</html>
